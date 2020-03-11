@@ -1,0 +1,12 @@
+proj4: userInt.o linkedFunc.o linkedImp.o
+	gcc -o proj4 userInt.o linkedFunc.o linkedImp.o
+
+userInt.o: userInt.c restaurant.h
+	gcc -c userInt.c
+
+linkedFunc.o: linkedFunc.c restaurant.h
+	gcc -c linkedFunc.c
+
+linkedImp.o: linkedImp.c restaurant.h
+	gcc -c linkedImp.c
+
